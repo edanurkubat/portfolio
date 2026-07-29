@@ -51,7 +51,7 @@ export function renderHero() {
       <div class="absolute -inset-6 bg-gradient-to-br from-cyan-400/30 to-blue-500/30 rounded-full blur-3xl"></div>
       <div class="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl">
         <img
-          src="/images/profile.jpg"
+          src="/public/images/profile.jpg"
           alt="${name}"
           class="w-full h-full object-cover"
         />

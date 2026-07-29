@@ -110,7 +110,7 @@ function buildCVTemplate() {
       <!-- Sol Sütun -->
       <div style="width: 220px; flex-shrink: 0;">
         <div style="width: 220px; height: 260px; overflow: hidden; margin-bottom: 28px; filter: grayscale(100%); border: 1px solid #e5e7eb;">
-          <img src="/images/profile.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover;" />
+          <img src="/public/images/profile.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
 
         <div style="margin-bottom: 28px;">
