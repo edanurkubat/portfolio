@@ -1,0 +1,156 @@
+/* src/js/data/portfolioData.js */
+export const portfolioData = {
+  personalInfo: {
+    name: "Edanur Kubat",
+    title: {
+      tr: "Bilgisayar Programcılığı Öğrencisi",
+      en: "Computer Programming Student",
+    },
+    about: {
+      tr: "Marmara Üniversitesi Bilgisayar Programcılığı 2. sınıf öğrencisiyim. Yazılım geliştirme alanında kendimi sürekli geliştirmeye odaklanıyor, özellikle web geliştirme ve mobil uygulama teknolojileri üzerine projeler üretiyorum. Modern yazılım geliştirme süreçlerini öğrenmeye, kullanıcı odaklı ve performanslı uygulamalar geliştirmeye önem veriyorum. Yeni teknolojileri araştırmayı, öğrendiklerimi gerçek projelerde uygulamayı ve problem çözme becerilerimi geliştirmeyi seviyorum. Hedefim, Lisans eğitimi alarak kendimi daha da geliştirmek ve bu doğrultuda devam etmek.",
+      en: "I am a second-year Computer Programming student at Marmara University. I focus on continuously improving my skills in software development, particularly in web development and mobile application technologies. I aim to learn modern software development processes, create user-focused and performant applications, and develop my problem-solving abilities. My goal is to further my education with a bachelor's degree and continue developing my career in this field.",
+    },
+    location: "İstanbul, Türkiye",
+    experienceMonths: 1,
+    email: "edanurkubat0@gmail.com",
+    cvUrl: "/resume.pdf",
+    socials: {
+      github: "https://github.com/edanurkubat",
+      linkedin: "https://linkedin.com/in/edanurkubat",
+    },
+  },
+  skills: [
+    { category: "Programming Languages", items: ["Java", "C#", "Python", "C"] },
+    { category: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Canvas API"] },
+    { category: "Backend & Databases", items: ["Node.js", "SQL Server", "MongoDB", "Express.js", "Mongoose"] },
+    { category: "Game & Web Services", items: ["Unity", "RESTful API", "JWT (JSON Web Tokens)", "Nodemailer"] },
+    { category: "IDEs & Tools", items: ["Visual Studio/Code", "Eclipse", "Android Studio", "Git/Github"], },
+    { category: "Languages", items: ["Turkish (Native)", "English (Intermediate)"], },
+  ],
+  projects: [
+    {
+      id: 1,
+      title: { tr: "Borsa Pusulası", en: "Borsa Pusulası" },
+      description: {
+        tr: "Gerçek kripto para borsa verilerini canlı olarak takip eden, sanal bakiye ile alım satım simülasyonu yapılabilen ve portföy yönetimi sunan tam işlevli bir web uygulaması.",
+        en: "A fully functional web application that tracks real-time cryptocurrency exchange data, allows buying and selling simulations with virtual balances, and provides portfolio management features.",
+      },
+      longDescription: {
+        tr: "Borsa Pusulası, kullanıcıların gerçek zamanlı kripto para piyasası verilerini takip edebilmelerine, herhangi bir finansal risk almadan sanal bakiye ile alım-satım simülasyonu yapabilmelerine ve detaylı portföy analizi gerçekleştirebilmelerine olanak tanıyan tam donanımlı bir web uygulamasıdır. Günümüz finansal teknolojilerinin gereksinimlerine uygun olarak tasarlanan bu platform; kripto para ekosistemine yeni adım atan kullanıcılar için güvenli bir deneme alanı sunarken, deneyimli yatırımcılar için de canlı piyasa takibi ve kişiselleştirilmiş alarm sistemleriyle güçlü bir yardımcı araç işlevi görür.Platform, finansal verilerin doğruluğunu ve güncelliğini sağlamak amacıyla sektörün öncü veri sağlayıcılarıyla entegre bir şekilde çalışır. Sistemin kalbinde, Binance REST API üzerinden 2 saniyede bir güncellenen canlı piyasa ve emir defteri (order book) verileri yer alır. Kullanıcılar; Bitcoin ve popüler altcoin’lerin anlık fiyat değişimlerini, 24 saatlik yüksek/düşük seviyelerini ve işlem hacimlerini canlı kayan fiyat bandı (ticker) üzerinden kesintisiz takip edebilirler. Piyasanın genel psikolojisini ölçmek adına Fear & Greed (Korku ve Açgözlülük) endeksi ve BTC dominansı gibi Kritik göstergeler de arayüzde anlık olarak sunulur. Ayrıca, herhangi bir harici kütüphaneye bağımlı kalmaksızın doğrudan Canvas API ile çizdirilen dinamik alan ve sparkline grafikleri sayesinde kullanıcılar farklı zaman dilimlerindeki (1S, 4S, 1G, 1H) fiyat hareketlerini pürüzsüz bir görsel deneyimle analiz edebilirler. CoinGecko, Coinbase ve Finnhub entegrasyonları ise piyasa değeri, dolaşımdaki arz, döviz dönüştürme ve güncel haber takibi gibi ek verilerle platformun bilgi ağını tamamlar.İşleyiş mekanizması bakımından uygulama, güvenli ve modern bir kullanıcı deneyimi üzerine kurulmuştur. Kullanıcılar Canvas tabanlı CAPTCHA ve OTP (E-posta aktivasyonu) adımlarını tamamlayarak sisteme kayıt olurlar. JWT (JSON Web Token) tabanlı oturum yönetimi ve bcryptjs şifreleme altyapısı sayesinde hesap güvenliği üst seviyede tutulur. Giriş yapan her kullanıcıya sunulan sınırsız sanal bakiye ile Al/Sat paneli üzerinden Limit, Market ve OCO (One-Cancels-the-Other) gibi gerçek borsalarda kullanılan gelişmiş emir türleriyle işlem yapılabilir. Yapılan tüm alım-satım işlemleri MongoDB Atlas veritabanında kalıcı olarak saklanır ve Binance’ten alınan anlık verilerle senkronize bir şekilde kullanıcının kâr/zarar durumu hesaplanır. Kullanıcılar portföylerinin dağılımını Donut grafikler üzerinden inceleyebilir, performans değişimlerini tarihsel olarak görüntüleyebilir, portföy özetlerini PDF veya CSV formatında dışa aktarabilirler.Projenin öne çıkan en güçlü yönlerinden biri, kullanıcıyı platforma bağımlı kılmayan akıllı bildirim ve zamanlanmış görev mimarisidir. Fiyat alarmları kuran kullanıcılar, hedef fiyatlara ulaşıldığında hem anlık tarayıcı push bildirimleri hem de Gmail SMTP altyapısı üzerinden e-posta ile bilgilendirilirler. Ayrıca Node.js ve node-cron zamanlayıcısı sayesinde her Pazartesi sabahı kullanıcılara haftalık portföy performans özetleri otomatik olarak e-posta ile iletilir. Kullanıcı profili yönetimi, karanlık ve aydınlık tema tercihleri, detaylı coin analiz sayfaları ve döviz/kripto dönüştürücü paneli ile Borsa Pusulası, veri yoğunluğunu kullanıcı dostu bir arayüzle buluşturan, uçtan uca mimariye sahip modern bir web platformudur.",
+        en: "Borsa Pusulası, users can track real-time cryptocurrency market data, perform buying and selling simulations with virtual balances, and manage their portfolios. The platform is designed to meet the needs of modern financial technologies, providing a safe testing environment for newcomers to the crypto ecosystem while serving experienced investors with live market monitoring and personalized alert systems. The platform integrates with leading data providers to ensure the accuracy and timeliness of financial information. At the core of the system are live market and order book data updated every 2 seconds via the Binance REST API. Users can continuously monitor Bitcoin and popular altcoins' price changes, 24-hour high/low levels, and trading volumes through a live ticker. Critical indicators such as the Fear & Greed (Fear and Greed) index and BTC dominance are also displayed in real-time on the interface. Additionally, users can analyze price movements across different timeframes (1S, 4S, 1G, 1H) through dynamically rendered areas and sparkline charts created directly with the Canvas API. Integrations with CoinGecko, Coinbase, and Finnhub complete the platform's information network with additional data such as market value, circulating supply, currency conversion, and current news coverage. The application is built on a secure and modern user experience foundation. Users complete Canvas-based CAPTCHA and OTP (Email Activation) steps to register for the system. Account security is maintained at a high level through JWT (JSON Web Token)-based session management and bcryptjs encryption infrastructure. Each logged-in user is provided with an unlimited virtual balance to perform trades via the Buy/Sell panel using advanced order types used in real exchanges such as Limit, Market, and OCO (One-Cancels-the-Other). All transactions are permanently stored in MongoDB Atlas database synchronized with real-time data from Binance. Users can analyze their portfolio distribution through Donut charts, view performance changes historically, and export portfolio summaries in PDF or CSV format. One of the project's standout features is its smart notification system that does not tie users to a specific platform: users who set price alerts receive both instant browser push notifications and email updates via Gmail SMTP infrastructure when target prices are reached. Additionally, Node.js and node-cron schedulers automatically send weekly portfolio performance summaries to users every Monday morning via email. User profile management along with dark/light theme preferences combined with detailed coin analysis pages and a currency/cryptocurrency converter panel make Borsa Pusulası a modern web platform that bridges data intensity with a user-friendly interface.",
+      },
+      image: "/images/projects/BorsaPusulasi/BorsaPusulasiKapak.jpg",
+      gallery: [
+        "/images/projects/BorsaPusulasi/AnasayfaAllDark.jpg",
+        "/images/projects/BorsaPusulasi/AnasayfaAllLight.jpg",
+        "/images/projects/BorsaPusulasi/portfoy.jpg",
+        "/images/projects/BorsaPusulasi/doviz.jpg",
+        "/images/projects/BorsaPusulasi/donusturucu.jpg",
+        "/images/projects/BorsaPusulasi/haberler.jpg",
+        "/images/projects/BorsaPusulasi/aktif-hesap.jpg",
+        "/images/projects/BorsaPusulasi/aktif-olmayan-hesap.jpg",
+        "/images/projects/BorsaPusulasi/coin-detay.jpg",
+        "/images/projects/BorsaPusulasi/ayarlar.jpg",
+        "/images/projects/BorsaPusulasi/giris.jpg",
+        "/images/projects/BorsaPusulasi/kayit.jpg",
+      ],
+      tags: [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Express.js",
+        "RESTful API",
+        "Node.js",
+        "MongoDB Atlas",
+        "Mongoose",
+        "Canvas API",
+        "JWT",
+        "Canvas CAPTCHA",
+        "OTP",
+        "SMTP",
+        "node-cron",
+        "Responsive Design",
+      ],
+      featured: true,
+      githubUrl: "https://github.com/edanurkubat/borsa-pusulasi",
+    },
+  ],
+  experience: [
+    {
+      period: "2026 Temmuz - 2026 Ağustos",
+      role: { tr: "Web Geliştirme Stajyeri", en: "Web Developer Intern" },
+      company: "ICED Company",
+      description: {
+        tr: "Küçük ölçekli web uygulamalarının arayüz geliştirme süreçlerinde görev aldım.",
+        en: "Contributed to UI development of small-scale web applications.",
+      },
+    },
+  ],
+  education: [
+    {
+      period: "2024 - 2026",
+      degree: {
+        tr: "Bilgisayar Programcılığı (Önlisans)",
+        en: "Computer Programming (As.)",
+      },
+      school: "Marmara Üniversitesi",
+    },
+    {
+      period: "2021 - 2023",
+      degree: { tr: "Say", en: "Say" },
+      school: "Dr. Vasıf Toçu Fen Lisesi",
+    },
+    {
+      period: "2019 - 2021",
+      degree: { tr: "Say", en: "Say" },
+      school: "TOBB Fen Lisesi",
+    },
+  ],
+  certificates: [
+    {
+      title: {
+        tr: "C# Form ile Görsel ve Nesne Tabanlı Programlama",
+        en: "Visual and Object-Oriented Programming with C# Forms",
+      },
+      institution: "Turkcell Geleceği Yazanlar",
+      date: "2025",
+      description: {
+        tr: "C# ile form oluşturma ve sql bağlantısı kurma",
+        en: "Creating forms and establishing SQL connections with C#",
+      },
+      verifyUrls: [
+        {
+          label: "1. Sertifika",
+          url: "https://gelecegiyazanlar.turkcell.com.tr/sertifika/404631569bd44351abe0baa891e1d19b",
+        },
+        {
+          label: "2. Sertifika",
+          url: "https://gelecegiyazanlar.turkcell.com.tr/sertifika/220ef8f109f447288410ac90902efe91",
+        },
+      ],
+    },
+    {
+      title: { tr: "Web Programlama", en: "Web Programming" },
+      institution: "Turkcell Geleceği Yazanlar",
+      date: "2025",
+      description: {
+        tr: "HTML ile basit web sayfaları oluşturma",
+        en: "Creating simple web pages with HTML",
+      },
+      verifyUrls: [
+        {
+          label: "1. Sertifika",
+          url: "https://gelecegiyazanlar.turkcell.com.tr/sertifika/086b0fa70a4c443fa6fdcc24a3aadd53",
+        },
+        {
+          label: "2. Sertifika",
+          url: "https://gelecegiyazanlar.turkcell.com.tr/sertifika/0db1a4f7f5a04d5da48def2f1d17e65e",
+        },
+        {
+          label: "3. Sertifika",
+          url: "https://gelecegiyazanlar.turkcell.com.tr/sertifika/fc7128e82b404e8da33254a12354911a",
+        },
+      ],
+    },
+  ],
+};

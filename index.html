@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edanur Kubat | Web Yazılım Geliştirici</title>
+    <meta
+      name="description"
+      content="Edanur Kubat'ın kişisel portfolyo sitesi. Web geliştirme projeleri, yetenekler ve iletişim bilgileri."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Edanur Kubat" />
+    <link rel="canonical" href="https://edanurkubat.vercel.app/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Edanur Kubat | Web Yazılım Geliştirici"
+    />
+    <meta
+      property="og:description"
+      content="Web geliştirme projelerim ve uzmanlık alanlarım."
+    />
+    <meta
+      property="og:image"
+      content="https://edanurkubat.vercel.app/images/og-cover.jpg"
+    />
+    <meta property="og:url" content="https://edanurkubat.vercel.app/" />
+    <meta property="og:locale" content="tr_TR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Edanur Kubat | Web Yazılım Geliştirici"
+    />
+    <meta
+      name="twitter:description"
+      content="Web geliştirme projelerim ve uzmanlık alanlarım."
+    />
+    <meta
+      name="twitter:image"
+      content="https://edanurkubat.vercel.app/images/og-cover.jpg"
+    />
+
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme") || "dark";
+        if (theme === "dark") document.documentElement.classList.add("dark");
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.6.7/dist/html2canvas-pro.min.js"></script>
+    <link rel="stylesheet" href="./src/assets/styles/output.css" />
+
+    <!-- Yapılandırılmış Veri (Structured Data) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Edanur Kubat",
+        "jobTitle": "Web Yazılım Geliştirici",
+        "url": "https://edanurkubat.vercel.app/",
+        "sameAs": [
+          "https://github.com/edanurkubat",
+          "https://linkedin.com/in/edanurkubat"
+        ]
+      }
+    </script>
+  </head>
+  <body
+    class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-50 font-sans antialiased selection:bg-cyan-500 selection:text-slate-900 transition-colors duration-300"
+  >
+    <div
+      id="scroll-progress"
+      class="fixed top-0 left-0 h-1 bg-cyan-400 z-[60]"
+      style="width: 0%"
+    ></div>
+    <!-- Header / Navigation -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300"
+    >
+      <nav
+        class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <a
+          href="#"
+          class="text-xl font-bold tracking-tight text-cyan-600 dark:text-cyan-400"
+          >DEV<span class="text-slate-900 dark:text-slate-100"
+            >.PORTFOLIO</span
+          ></a
+        >
+
+        <!-- Desktop Navigation -->
+        <ul
+          class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600 dark:text-slate-300"
+        >
+          <li>
+            <a
+              href="#about"
+              data-i18n="nav.about"
+              class="hover:text-cyan-400 transition-colors"
+              >Hakkımda</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              data-i18n="nav.skills"
+              class="hover:text-cyan-400 transition-colors"
+              >Yetenekler</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              data-i18n="nav.projects"
+              class="hover:text-cyan-400 transition-colors"
+              >Projeler</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              data-i18n="nav.experience"
+              class="hover:text-cyan-400 transition-colors"
+              >Deneyim</a
+            >
+          </li>
+          <li>
+            <a
+              href="#certificates"
+              data-i18n="nav.certificates"
+              class="hover:text-cyan-400 transition-colors"
+              >Sertifikalar</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              data-i18n="nav.contact"
+              class="hover:text-cyan-400 transition-colors"
+              >İletişim</a
+            >
+          </li>
+        </ul>
+
+        <!-- Sağ Taraf: Tema + Dil Butonu + Mobil Menü -->
+        <div class="flex items-center gap-3">
+          <button
+            id="theme-toggle"
+            type="button"
+            role="switch"
+            aria-checked="true"
+            class="relative w-11 h-6 rounded-full bg-slate-300 dark:bg-slate-700 transition-colors duration-300"
+            aria-label="Temayı Değiştir"
+          >
+            <span
+              id="theme-toggle-knob"
+              class="absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white dark:bg-cyan-400 shadow-md transition-transform duration-300 dark:translate-x-5"
+            ></span>
+          </button>
+          <button
+            id="lang-toggle"
+            class="text-xs font-semibold px-3 py-1.5 rounded-md border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-cyan-500 hover:text-cyan-400 transition-colors"
+            aria-label="Dili Değiştir"
+          >
+            <span id="lang-toggle-label">EN</span>
+          </button>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:text-cyan-400"
+            aria-label="Menüyü Aç"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 pt-24 space-y-32">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-12 py-12"
+      >
+        <!-- JavaScript ile doldurulacak -->
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="scroll-mt-24">
+        <h2
+          data-i18n="sections.about"
+          class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8"
+        >
+          Hakkımda
+        </h2>
+        <div
+          id="about-content"
+          class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-3xl"
+        ></div>
+        <div
+          id="about-stats"
+          class="grid grid-cols-3 gap-6 mt-10 max-w-2xl"
+        ></div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="scroll-mt-24">
+        <h2
+          data-i18n="sections.skills"
+          class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8"
+        >
+          Yetenekler & Uzmanlık
+        </h2>
+        <div
+          id="skills-grid"
+          class="grid grid-cols-1 md:grid-cols-3 gap-6"
+        ></div>
+      </section>
+
+      <!-- Projects Section (Focal Point) -->
+      <section id="projects" class="scroll-mt-24">
+        <div class="flex items-center justify-between mb-8">
+          <h2
+            data-i18n="sections.projects"
+            class="text-3xl font-bold border-l-4 border-cyan-400 pl-4"
+          >
+            Öne Çıkan Projeler
+          </h2>
+          <span
+            data-i18n="sections.projectsSubtitle"
+            class="text-sm text-slate-500 dark:text-slate-400"
+          >
+            Sektör standartlarında geliştirmeler
+          </span>
+        </div>
+        <div id="projects-filter" class="flex flex-wrap gap-2 mb-8"></div>
+        <div
+          id="projects-grid"
+          class="grid grid-cols-1 md:grid-cols-2 gap-8"
+        ></div>
+      </section>
+
+      <!-- Experience & Education -->
+      <section id="experience" class="scroll-mt-24">
+        <h2
+          data-i18n="sections.experience"
+          class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8"
+        >
+          Deneyim & Eğitim
+        </h2>
+        <div id="experience-timeline" class="space-y-6"></div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="scroll-mt-24">
+        <h2
+          data-i18n="sections.certificates"
+          class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8"
+        >
+          Sertifikalar & Başarılar
+        </h2>
+        <div
+          id="certificates-grid"
+          class="grid grid-cols-1 md:grid-cols-2 gap-6"
+        ></div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="scroll-mt-24 pb-16">
+        <h2
+          data-i18n="sections.contact"
+          class="text-3xl font-bold border-l-4 border-cyan-400 pl-4 mb-8"
+        >
+          İletişime Geç
+        </h2>
+        <!-- İletişim formu ve kanalları -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-slate-500 text-sm"
+    >
+      <p data-i18n="footer">
+        &copy; 2026 Developer Portfolio. Tüm hakları saklıdır.
+      </p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-top-btn"
+      type="button"
+      class="hidden fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-lg flex items-center justify-center transition-all"
+      aria-label="Yukarı Dön"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          d="M5 15l7-7 7 7"
+        ></path>
+      </svg>
+    </button>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

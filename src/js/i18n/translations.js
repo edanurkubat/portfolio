@@ -1,0 +1,81 @@
+/* src/js/i18n/translations.js */
+export const translations = {
+  tr: {
+    nav: { about: "Hakkımda", skills: "Yetenekler", github: "GitHub", projects: "Projeler", experience: "Deneyim", certificates: "Sertifikalar", contact: "İletişim" },
+    hero: { badge: "Geliştirici Portfolyosu", greeting: "Merhaba, Ben", projectsBtn: "Projeleri İncele", cvBtn: "Özgeçmiş (CV)" },
+    sections: {
+      about: "Hakkımda",
+      skills: "Yetenekler & Uzmanlık",
+      projects: "Öne Çıkan Projeler",
+      projectsSubtitle: "Sektör standartlarında geliştirmeler",
+      experience: "Deneyim & Eğitim",
+      github: "GitHub İstatistikleri",
+      contact: "İletişime Geç",
+      certificates: "Sertifikalar & Başarılar",
+      success: "Tebrikler! Mesajınız başarıyla iletildi. En kısa sürede sizinle iletişime geçeceğim.",
+      error: "Bir sorun oluştu, mesajınız gönderilemedi. Lütfen tekrar deneyin veya doğrudan e-posta gönderin."
+    },
+    experience: { workTitle: "İş Deneyimi", eduTitle: "Eğitim" },
+    stats: { projects: "Tamamlanan Proje", technologies: "Kullanılan Teknoloji", months: "Ay Deneyim" },
+    certificates: { verifyLink: "Sertifikayı Görüntüle" },
+    projects: { demo: "Canlı Demo", code: "Kodlar", filterAll: "Tümü" },
+    projectDetail: { back: "Projelere Dön", viewGithub: "GitHub'da Görüntüle", screenshots: "Ekran Görüntüleri" },
+    contact: {
+      intro: "Yeni projeler, iş fırsatları veya sadece tanışmak için mesaj atabilirsiniz. En kısa sürede dönüş yapmaya çalışıyorum.",
+      emailLabel: "E-Posta",
+      locationLabel: "Konum",
+      nameLabel: "Ad Soyad",
+      namePlaceholder: "Adınız & Soyadınız",
+      nameError: "Lütfen adınızı girin.",
+      emailFieldLabel: "E-Posta Adresi",
+      emailPlaceholder: "adınız@example.com",
+      emailError: "Geçerli bir e-posta adresi girin.",
+      messageLabel: "Mesajınız",
+      messagePlaceholder: "Mesajınızı buraya yazın...",
+      messageError: "Mesaj alanı boş bırakılamaz (min 10 karakter).",
+      submit: "Mesaj Gönder",
+      sending: "Gönderiliyor...",
+      success: "Tebrikler! Mesajınız başarıyla iletildi. En kısa sürede sizinle iletişime geçeceğim."
+    },
+    footer: "© 2026 Developer Portfolio. Tüm hakları saklıdır."
+  },
+  en: {
+    nav: { about: "About", skills: "Skills", github: "GitHub", projects: "Projects", experience: "Experience", certificates: "Certificates", contact: "Contact" },
+    hero: { badge: "Developer Portfolio", greeting: "Hi, I'm", projectsBtn: "View Projects", cvBtn: "Resume (CV)" },
+    sections: {
+      about: "About Me",
+      skills: "Skills & Expertise",
+      projects: "Featured Projects",
+      projectsSubtitle: "Built to industry standards",
+      experience: "Experience & Education",
+      github: "GitHub Stats",
+      contact: "Get In Touch",
+      certificates: "Certificates & Achievements",
+      success: "Great! Your message has been sent successfully. I'll get back to you soon.",
+      error: "Something went wrong and your message couldn't be sent. Please try again or email me directly."
+    },
+    experience: { workTitle: "Work Experience", eduTitle: "Education" },
+    stats: { projects: "Completed Projects", technologies: "Technologies Used", months: "Months of Experience" },
+    certificates: { verifyLink: "View Certificate" },
+    projects: { demo: "Live Demo", code: "Code", filterAll: "All" },
+    projectDetail: { back: "Back to Projects", viewGithub: "View on GitHub", screenshots: "Screenshots" },
+    contact: {
+      intro: "Feel free to reach out about new projects, opportunities, or just to say hi. I try to respond as quickly as possible.",
+      emailLabel: "Email",
+      locationLabel: "Location",
+      nameLabel: "Full Name",
+      namePlaceholder: "Your Name & Surname",
+      nameError: "Please enter your name.",
+      emailFieldLabel: "Email Address",
+      emailPlaceholder: "your.email@example.com",
+      emailError: "Please enter a valid email address.",
+      messageLabel: "Your Message",
+      messagePlaceholder: "Your message here...",
+      messageError: "Message field cannot be empty (min 10 characters).",
+      submit: "Send Message",
+      sending: "Sending...",
+      success: "Great! Your message has been sent successfully. I'll get back to you soon."
+    },
+    footer: "© 2026 Developer Portfolio. All rights reserved.",
+  }
+};
