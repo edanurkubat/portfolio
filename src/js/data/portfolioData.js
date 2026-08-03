@@ -20,9 +20,9 @@ export const portfolioData = {
     },
   },
   skills: [
-    { category: "Programming Languages", items: ["Java", "C#", "Python", "C"] },
+    { category: "Programming Languages", items: ["Java", "C#", "Python", "C", "Kotlin"] },
     { category: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "Canvas API"] },
-    { category: "Backend & Databases", items: ["Node.js", "SQL Server", "MongoDB", "Express.js", "Mongoose"] },
+    { category: "Backend & Databases", items: ["Node.js", "SQL Server", "MongoDB", "Express.js"] },
     { category: "Game & Web Services", items: ["Unity", "RESTful API", "JWT (JSON Web Tokens)", "Nodemailer"] },
     { category: "IDEs & Tools", items: ["Visual Studio/Code", "Eclipse", "Android Studio", "Git/Github"], },
     { category: "Languages", items: ["Turkish (Native)", "English (Intermediate)"], },
@@ -97,6 +97,33 @@ export const portfolioData = {
       ],
       featured: true,
       githubUrl: "https://github.com/edanurkubat/pastane-sitesi",
+    },
+    {
+      id: 3,
+      title: { tr: "Pomodoro Uygulaması", en: "Pomodoro App" },
+      description: {
+        tr: "Pomodoro, kullanıcıların odaklanmasını artırmak, çalışma alışkanlıklarını takip etmek ve günlük verimliliklerini analiz etmek amacıyla geliştirilmiş, native bir Android uygulamasıdır.",
+        en: "Pomodoro is a native Android application developed to enhance users' focus, track their work habits, and analyze their daily productivity.",
+      },
+      longDescription: {
+        tr: "Pomodoro, kullanıcıların odaklanma sürelerini artırmak, çalışma alışkanlıklarını takip etmek ve günlük verimliliklerini analiz etmek amacıyla geliştirilmiş native bir Android uygulamasıdır. Standart bir geri sayım sayacının ötesine geçen sistem; görev yönetimi, detaylı istatistiksel analizler, geçmiş oturum kayıtları ve tamamen kişiselleştirilebilir çalışma ile mola ayarları sunmaktadır. Uygulama, profesyonel yazılım geliştirme standartlarına uygun olarak MVVM ve Clean Architecture (Temiz Mimari) deseniyle inşa edilmiştir. Kod tabanı; Android bağımlılığı içermeyen iş kurallarının yer aldığı domain, veritabanı ve veri kaynaklarının yönetildiği data ile arayüzün yönetildiği presentation olmak üzere üç ana katmandan oluşmaktadır. Projenin teknik mimarisinde Android ekosisteminin modern ve standart kabul edilen teknolojileri tercih edilmiştir. Programlama dili olarak Kotlin, kullanıcı arayüzünde ise Jetpack Compose kullanılmıştır. Bağımlılık yönetimi Hilt ile sağlanırken, asenkron işlemler ve veri akışları Kotlin Coroutines ve Flow altyapısıyla yürütülmektedir. Yerel veri depolama tarafında veritabanı işlemleri için Room ORM katmanından, kullanıcı tercihlerinin saklanmasında ise Jetpack DataStore'dan faydalanılmıştır. Zamanlayıcının uygulama kapatılsa dahi kesintisiz çalışabilmesi Foreground Service ile garanti altına alınmış, istatistiksel grafiklerin görselleştirilmesinde MPAndroidChart, ekran navigasyonunda ise Navigation Compose kütüphanesi kullanılmıştır. Kod kalitesini korumak adına JUnit, MockK, Turbine ve Coroutines Test araçlarıyla birim test süreçleri kurgulanmıştır. Açık/koyu tema desteği, TalkBack uyumlu erişilebilirlik standartları ve farklı ekran boyutlarına uyum sağlayan duyarlı (responsive) tasarımıyla dikkat çeken uygulama, tüm kullanıcı verilerini cihaz üzerinde güvenle saklamaktadır.",
+        en: "Pomodoro is a native Android application developed to enhance users' focus, track their work habits, and analyze their daily productivity. The system goes beyond a standard countdown timer by offering task management, detailed statistical analyses, historical session records, and fully customizable work and break settings. The application is built in accordance with professional software development standards using the MVVM and Clean Architecture patterns. The codebase consists of three main layers: domain, which contains business rules independent of Android; data, which manages database and data sources; and presentation, which handles the user interface. The technical architecture of the project leverages modern and widely accepted technologies within the Android ecosystem. Kotlin is used as the programming language, while Jetpack Compose is employed for the user interface. Dependency management is handled with Hilt, and asynchronous operations and data flows are executed using Kotlin Coroutines and Flow. For local data storage, Room ORM is utilized for database operations, while Jetpack DataStore is used for storing user preferences. To ensure uninterrupted operation of the timer even when the app is closed, a Foreground Service is implemented. MPAndroidChart is used for visualizing statistical graphs, and Navigation Compose handles screen navigation. Unit testing processes are established using JUnit, MockK, Turbine, and Coroutines Test tools to maintain code quality. The application stands out with its support for light/dark themes, TalkBack-compatible accessibility standards, and responsive design that adapts to different screen sizes, securely storing all user data on the device.",
+      },
+      image: "/public/images/projects/PomodoroApp/PomodoroAppKapak.jpg",
+      gallery: [
+        "/public/images/projects/PomodoroApp/home.jpg",
+        "/public/images/projects/PomodoroApp/tasks.jpg",
+        "/public/images/projects/PomodoroApp/statistics.jpg",
+        "/public/images/projects/PomodoroApp/history.jpg",
+        "/public/images/projects/PomodoroApp/settings.jpg",
+        "/public/images/projects/PomodoroApp/light_theme.jpg",
+      ],
+      tags: [
+        "Kotlin",
+        "Jetpack Compose",
+      ],
+      featured: true,
+      githubUrl: "https://github.com/edanurkubat/pomodoro-app",
     },
   ],
   experience: [
