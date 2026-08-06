@@ -51,8 +51,6 @@ export const portfolioData = {
         "/public/images/projects/BorsaPusulasi/aktif-olmayan-hesap.jpg",
         "/public/images/projects/BorsaPusulasi/coin-detay.jpg",
         "/public/images/projects/BorsaPusulasi/ayarlar.jpg",
-        "/public/images/projects/BorsaPusulasi/giris.jpg",
-        "/public/images/projects/BorsaPusulasi/kayit.jpg",
       ],
       tags: [
         "JavaScript",
